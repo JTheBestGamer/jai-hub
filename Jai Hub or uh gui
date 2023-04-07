@@ -652,3 +652,12 @@ end
 Spawner.runEntity(entity)
   end)
 end)
+
+btns:Seperator()
+
+btns:Button("Arceus X Gui", function()
+DiscordLib:Notification("Notification", "Executed Arceus X", "Okay!")
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end)
