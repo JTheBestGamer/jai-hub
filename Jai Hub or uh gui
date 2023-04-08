@@ -608,6 +608,12 @@ end
 Spawner.runEntity(entity)
   end,
 })
+end)
+
+btns:Seperator()
+
+btns:Button("Bad Hardcore", function()
+DiscordLib:Notification("Notification", "Executed Bad Hardcore", "Okay!")
 
 Template.Loader({['WaitTime'] = 60,['DisableSeek'] = true,['DisableFigure'] = true,['RoomMax'] = 100,['RoomMin'] = 60},function()
 ---====== Define spawner ======---
