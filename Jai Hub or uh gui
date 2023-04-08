@@ -686,8 +686,7 @@ end
 ---====== Run entity ======---
 
 Spawner.runEntity(entity)
-  end,
-})
+  end)
 end)
 
 btns:Seperator()
