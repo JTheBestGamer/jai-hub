@@ -606,7 +606,8 @@ end
 ---====== Run entity ======---
 
 Spawner.runEntity(entity)
-end)
+  end,
+})
 
 Template.Loader({['WaitTime'] = 60,['DisableSeek'] = true,['DisableFigure'] = true,['RoomMax'] = 100,['RoomMin'] = 60},function()
 ---====== Define spawner ======---
