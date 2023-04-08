@@ -128,7 +128,6 @@ DiscordLib:Notification("Notification", "Executed Bad Entity Spawner", "Okay!")
 
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
-
 local Window = Rayfield:CreateWindow({
 	Name = " 2d Entity Spawner",
 	LoadingTitle = "uhhhhhhhh",
@@ -221,13 +220,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -304,13 +296,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -389,13 +374,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -472,13 +450,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -555,13 +526,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -638,13 +602,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -718,13 +675,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -814,13 +764,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -894,13 +837,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -974,13 +910,6 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
@@ -1054,25 +983,9 @@ entity.Debug.OnDeath = function()
     print("Player has died")
 end
 
---[[
-    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
-
-    entity.Debug.OnUseCrucifix = function()
-        print("Custom crucifixion script here")
-    end
-]]--
 
 ---====== Run entity ======---
 
 Spawner.runEntity(entity)
   end)
-end)
-
-btns:Seperator()
-
-btns:Button("Arceus X Gui", function()
-DiscordLib:Notification("Notification", "Executed Arceus X", "Okay!")
-
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 end)
