@@ -1002,10 +1002,10 @@ btns:Seperator()
 btns:Button("Public Spy Chat (risky)", function()
 DiscordLib:Notification("Notification", "Executed Public Spy (check console for instructions)", "Okay!")
 
-print("Chat /spy to toggle spy")
+print("Chat /publicspy to toggle spy")
 
 --This script reveals ALL hidden messages in the default chat
---chat "/spy" to toggle!
+--chat "/publicspy" to toggle!
 enabled = true
 --if true will check your messages too
 spyOnMyself = false
@@ -1029,7 +1029,7 @@ _G.chatSpyInstance = instance
  
 local function onChatted(p,msg)
     if _G.chatSpyInstance == instance then
-        if p==player and msg:lower():sub(1,4)=="/spy" then
+        if p==player and msg:lower():sub(1,4)=="/publicspy" then
             enabled = not enabled
             wait(0.3)
             privateProperties.Text = "{PUBLIC SPY "..(enabled and "EN" or "DIS").."ABLED}"
@@ -1048,7 +1048,7 @@ local function onChatted(p,msg)
                 if public then
                     saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
                 else
-                    privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+                    privateProperties.Text = "{PUBLIC SPY} [".. p.Name .."]: "..msg
                     StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
                 end
             end
@@ -1062,7 +1062,7 @@ end
 Players.PlayerAdded:Connect(function(p)
     p.Chatted:Connect(function(msg) onChatted(p,msg) end)
 end)
-privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+privateProperties.Text = "{PUBLIC SPY "..(enabled and "EN" or "DIS").."ABLED}"
 StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
 local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
