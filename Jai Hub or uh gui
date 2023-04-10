@@ -1068,3 +1068,13 @@ local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
 chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 end)
+
+btns:Button("Steal all Inventory", function()
+DiscordLib:Notification("Notification", "Executed Steal", "Okay!")
+
+for i,v in pairs (game.Players:GetChildren()) do wait() 
+for i,b in pairs (v.Backpack:GetChildren()) 
+do b.Parent = game.Players.LocalPlayer.Backpack 
+end 
+end
+end)
