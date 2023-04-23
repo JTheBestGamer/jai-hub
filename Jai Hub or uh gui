@@ -1002,7 +1002,7 @@ btns:Seperator()
 btns:Button("Public Spy Chat (risky)", function()
 DiscordLib:Notification("Notification", "Executed Public Spy (check console for instructions)", "Okay!")
 
-print("Chat /publicspy to toggle spy")
+print("Chat /publicspy to toggle public spy")
 
 --This script reveals ALL hidden messages in the default chat
 --chat "/publicspy" to toggle!
@@ -1077,4 +1077,22 @@ for i,b in pairs (v.Backpack:GetChildren())
 do b.Parent = game.Players.LocalPlayer.Backpack 
 end 
 end
+end)
+
+btns:Button("Cook Burgers", function()
+DiscordLib:Notification("Notification", "Executed CB", "Okay!")
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/Cook-Burgers-Cook-Burger-Admin-Bad-Gui-TROLL-8588"))()
+end)
+
+btns:Button("BAPN", function()
+DiscordLib:Notification("Notification", "Executed BAPN", "Okay!")
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/Be-A-Parkour-Ninja-Be-A-Parkour-Ninja-script-4235"))()
+end)
+
+btns:Button("Universal Gui (Simplity)", function()
+DiscordLib:Notification("Notification", "Executed Simplity", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
 end)
