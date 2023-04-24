@@ -1157,6 +1157,8 @@ DiscordLib:Notification("Notification", "Executed CTP Banana (might not work on 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/persopoiu/scripts/main/bananclicktpfools.lua'))()
 end)
 
+btns:Seperator()
+
 btns:Button("God Mode on Entities (doors)", function()
 
 DiscordLib:Notification("Notification", "Executed God Mode (works on Rush, Ambush, eyes, and other hardcore 2d Goofy nextbots", "Okay!") 
