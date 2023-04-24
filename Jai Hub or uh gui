@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("sussy baka")
 
-local serv = win:Server("Hub", "by jai")
+local serv = win:Server("Main", "")
 
 local btns = serv:Channel("Stuff")
 
@@ -1095,7 +1095,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("HyperLaser Gun (universal)", function()
+btns:Button("HyperLaser Gun (universal) (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed HyperLaser", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
@@ -1103,7 +1103,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Holy Hand Grenade on EVERYTHING!", function()
+btns:Button("Holy Hand Grenade on EVERYTHING! (GLITCHY)", function()
 DiscordLib:Notification("Notification", "Executed HHG on Everything", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
@@ -1111,9 +1111,33 @@ end)
 
 btns:Seperator()
 
-btns:Button("God Mode on Entities (doors)", function()
+btns:Button("God Mode on Entities (doors) (WORKING)", function()
 
 DiscordLib:Notification("Notification", "Executed God Mode (works on Rush, Ambush, eyes, and other hardcore 2d Goofy nextbots", "Okay!") 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
 end)
+
+win:Server("Updates", "")
+
+local lbls = serv:Channel("Updates")
+
+lbls:Label("V1 = Release")
+
+lbls:Label("V1.5 = Adding stuff")
+
+lbls:Label("V2 = Also more adding")
+
+lbls:Label("V2.5 = Bug fixes")
+
+lbls:Label("V2.75 = More bug fixes")
+
+lbls:Label("V3 = Adding stuff")
+
+lbls:Label("V3.5 = Adding stuff")
+
+lbls:Label("V4 = Adding stuff and making something")
+
+lbls:Label("V5 = Loadstringed")
+
+lbls:Label("V5< = Adding stuff")
