@@ -1102,3 +1102,53 @@ DiscordLib:Notification("Notification", "Executed Simplity", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
 end)
+
+btns:Seperator()
+
+btns:Button("HyperLaser Gun (universal)", function()
+DiscordLib:Notification("Notification", "Executed HyperLaser", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​end)
+
+btns:Seperator()
+
+btns:Button("Banana Gun 1 (doors)", function()
+DiscordLib:Notification("Notification", "Executed Banana Gun 1", "Okay!")
+
+loadstring(game:HttpGet("https://pastebin.com/raw/CBxBM55t", true))()
+end)
+
+btns:Button("Banana Gun 2 (doors)", function()
+DiscordLib:Notification("Notification", "Executed Banana Gun 2", "Okay!")
+ 
+getgenv().BananaGunSettings = {
+    BananaSpeed = 100,
+    BananaAmount = 1
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MasterOogway6147/Scripts/main/Doors/Kardin%20Hong/Banana%20Gun/Banana%20Gun.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Banana Gun 3 (doors)", function()
+DiscordLib:Notification("Notification", "Executed Banana Gun 3", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Holy Hand Grenade on EVERYTHING!", function()
+DiscordLib:Notification("Notification", "Executed HHG on Everything", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Click TP Banana (doors)", function()
+DiscordLib:Notification("Notification", "Executed CTP Banana (might not work on mobile)", "Okay!")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/persopoiu/scripts/main/bananclicktpfools.lua'))()
+end)
