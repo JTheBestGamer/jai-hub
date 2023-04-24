@@ -1079,17 +1079,23 @@ end
 end
 end)
 
+btns:Seperator()
+
 btns:Button("Cook Burgers", function()
 DiscordLib:Notification("Notification", "Executed CB", "Okay!")
 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Cook-Burgers-Cook-Burger-Admin-Bad-Gui-TROLL-8588"))()
 end)
 
+btns:Seperator()
+
 btns:Button("BAPN", function()
 DiscordLib:Notification("Notification", "Executed BAPN", "Okay!")
 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Be-A-Parkour-Ninja-Be-A-Parkour-Ninja-script-4235"))()
 end)
+
+btns:Seperator()
 
 btns:Button("Universal Gui (Simplity)", function()
 DiscordLib:Notification("Notification", "Executed Simplity", "Okay!")
