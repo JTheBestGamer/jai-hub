@@ -6,7 +6,7 @@ local serv = win:Server("Hub", "by jai")
 
 local btns = serv:Channel("Stuff")
 
-btns:Button("Rewind", function()
+btns:Button("Rewind (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Rewind", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
@@ -14,7 +14,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("MSDOORS", function()
+btns:Button("MSDOORS (WORKING FOR FLUXUS)", function()
 DiscordLib:Notification("Notification", "Executed MSDOORS", "Okay!")
 
 -- MSDOORS
@@ -23,7 +23,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("A-1000 autowalk", function()
+btns:Button("A-1000 autowalk (NOT TESTED)", function()
 DiscordLib:Notification("Notification", "Executed A-1000 AW", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DaRealGeo/roblox/master/rooms-autowalk"))()
@@ -31,7 +31,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Doors Morphs", function()
+btns:Button("Doors Morphs (WORKING, BEST ON PC)", function()
 DiscordLib:Notification("Notification", "Executed Morphs", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
@@ -39,7 +39,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Nerd Gui Doors", function()
+btns:Button("Nerd Gui Doors (OUTDATED)", function()
 DiscordLib:Notification("Notification", "Executed Nerd Gui", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV3.5_New.lua"))()
@@ -47,7 +47,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Crucifix Hub", function()
+btns:Button("Crucifix Hub (WORKING) [BY JAI]", function()
 DiscordLib:Notification("Notification", "Executed Crucifix Hub", "Okay!")
 
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
@@ -123,7 +123,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Bad Entity Spawner (Doors)", function()
+btns:Button("Bad Entity Spawner (Doors) (WORKING) [BY JAI]", function()
 DiscordLib:Notification("Notification", "Executed Bad Entity Spawner", "Okay!")
 
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
@@ -612,7 +612,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Hardcore", function()
+btns:Button("Hardcore (WORKING) [BY JAI]", function()
 DiscordLib:Notification("Notification", "Executed Bad Hardcore", "O- wait what?")
 
 local Template = loadstring(game:HttpGet("https://github.com/MuhXd/DoorSuff/blob/main/HardcoreTempate/TemplateCode.lua?raw=true"))()
@@ -919,7 +919,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Item Asylum", function()
+btns:Button("Item Asylum (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed IA Gui", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/travislmao/pub-scripts/main/abagui", true))()
@@ -927,7 +927,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Spy Chat", function()
+btns:Button("Spy Chat (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Spy (check console for instructions)", "Okay!")
 
 print("Chat /spy to toggle spy")
@@ -999,7 +999,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Public Spy Chat (risky)", function()
+btns:Button("Public Spy Chat (risky) (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Public Spy (check console for instructions)", "Okay!")
 
 print("Chat /publicspy to toggle public spy")
@@ -1071,19 +1071,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Steal all Inventory", function()
-DiscordLib:Notification("Notification", "Executed Steal", "Okay!")
-
-for i,v in pairs (game.Players:GetChildren()) do wait() 
-for i,b in pairs (v.Backpack:GetChildren()) 
-do b.Parent = game.Players.LocalPlayer.Backpack 
-end 
-end
-end)
-
-btns:Seperator()
-
-btns:Button("Cook Burgers", function()
+btns:Button("Cook Burgers (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed CB", "Okay!")
 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Cook-Burgers-Cook-Burger-Admin-Bad-Gui-TROLL-8588"))()
@@ -1091,7 +1079,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("BAPN", function()
+btns:Button("BAPN (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed BAPN", "Okay!")
 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Be-A-Parkour-Ninja-Be-A-Parkour-Ninja-script-4235"))()
@@ -1099,7 +1087,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Universal Gui (Simplity)", function()
+btns:Button("Universal Gui (Simplity) (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Simplity", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
@@ -1115,46 +1103,10 @@ end)
 
 btns:Seperator()
 
-btns:Button("Banana Gun 1 (doors)", function()
-DiscordLib:Notification("Notification", "Executed Banana Gun 1", "Okay!")
-
-loadstring(game:HttpGet("https://pastebin.com/raw/CBxBM55t", true))()
-end)
-
-btns:Seperator()
-
-btns:Button("Banana Gun 2 (doors)", function()
-DiscordLib:Notification("Notification", "Executed Banana Gun 2", "Okay!")
- 
-getgenv().BananaGunSettings = {
-    BananaSpeed = 100,
-    BananaAmount = 1
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MasterOogway6147/Scripts/main/Doors/Kardin%20Hong/Banana%20Gun/Banana%20Gun.lua"))()
-end)
-
-btns:Seperator()
-
-btns:Button("Banana Gun 3 (doors)", function()
-DiscordLib:Notification("Notification", "Executed Banana Gun 3", "Okay!")
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
-end)
-
-btns:Seperator()
-
 btns:Button("Holy Hand Grenade on EVERYTHING!", function()
 DiscordLib:Notification("Notification", "Executed HHG on Everything", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
-end)
-
-btns:Seperator()
-
-btns:Button("Click TP Banana (doors)", function()
-DiscordLib:Notification("Notification", "Executed CTP Banana (might not work on mobile)", "Okay!")
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/persopoiu/scripts/main/bananclicktpfools.lua'))()
 end)
 
 btns:Seperator()
