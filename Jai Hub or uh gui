@@ -1118,7 +1118,37 @@ DiscordLib:Notification("Notification", "Executed God Mode (works on Rush, Ambus
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
 end)
 
-win:Server("Updates", "")
+btns:Button("Keyboard (WORKING)", function()
+DiscordLib:Notification("Notification", "Executed Keyboard", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+btns:Button("Toggle Killbricks (WORKING)", function()
+DiscordLib:Notification("Notification", "Executed TKB (z to toggle, default true)", "Okay!")
+
+-- Z to Toggle 
+
+local player = game:GetService("Players").LocalPlayer 
+local UIS = game:GetService("UserInputService") 
+local myzaza = false 
+
+UIS.InputBegan:Connect(function(input, GPE) 
+if GPE then return end 
+if input.KeyCode == Enum.KeyCode.Z then 
+myzaza = not myzaza 
+
+end 
+end) 
+
+while task.wait() do 
+local parts = workspace:GetPartBoundsInRadius(player.Character:WaitForChild("HumanoidRootPart").Position, 10) 
+for _, part in ipairs(parts) do 
+part.CanTouch = myzaza 
+
+end 
+end
+end)
 
 local lbls = serv:Channel("Updates")
 
@@ -1141,3 +1171,5 @@ lbls:Label("V4 = Adding stuff and making something")
 lbls:Label("V5 = Loadstringed")
 
 lbls:Label("V5< = Adding stuff")
+
+lbls:Label("VCurrent = Adding and removing stuff")
