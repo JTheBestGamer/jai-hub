@@ -1118,11 +1118,15 @@ DiscordLib:Notification("Notification", "Executed God Mode (works on Rush, Ambus
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
 end)
 
+btns:Seperator()
+
 btns:Button("Keyboard (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Keyboard", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
+
+btns:Seperator()
 
 btns:Button("Toggle Killbricks (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed TKB (z to toggle, default true)", "Okay!")
