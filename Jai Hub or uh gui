@@ -1154,6 +1154,12 @@ end
 end
 end)
 
+btns:Button("Hitbox Extender [WORKING]", function()
+DiscordLib:Notification("Notification", "Executed Hitbox Extender", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
 local lbls = serv:Channel("Updates")
 
 lbls:Label("V1 = Release")
