@@ -1247,6 +1247,107 @@ DiscordLib:Notification("Notification", "Executed Hitbox Extender 2", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Bad_Business/Hit_Box_Expander.lua"))()
 end)
 
+btns:Button("Hitbox Extender 3 (WORKING) [BY JAI]", function()
+DiscordLib:Notification("Notification", "Executed Hitbox Extender 3", "Okay!")
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/UILib/main/source"))();
+
+lib:SetTitle("Hitbox Expander")
+
+local tab1 = lib:NewTab("sus", "dingle dangle my penis")
+
+tab1:NewTextBox("Hitbox","Enter WalkSpeed Here",function(value)
+
+for i,v in next, game:GetService('Players'):GetPlayers() do 
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+
+pcall(function() 
+
+v.Character.HumanoidRootPart.Size = value 
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
+v.Character.HumanoidRootPart.Material = "Neon" 
+v.Character.HumanoidRootPart.CanCollide = false 
+
+end) 
+end 
+end 
+end 
+end 
+end)
+end)
+
+tab1:NewSlider("Hitbox",10,100,10,function(value)
+
+for i,v in next, game:GetService('Players'):GetPlayers() do 
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+
+pcall(function() 
+
+v.Character.HumanoidRootPart.Size = value 
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
+v.Character.HumanoidRootPart.Material = "Neon" 
+v.Character.HumanoidRootPart.CanCollide = false 
+
+end) 
+end 
+end 
+end 
+end 
+end)
+end)
+
+end)
+end)
+
+tab1:NewButton("Change Hitbox to 15",function()
+
+for i,v in next, game:GetService('Players'):GetPlayers() do 
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+
+pcall(function() 
+
+v.Character.HumanoidRootPart.Size = 15
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
+v.Character.HumanoidRootPart.Material = "Neon" 
+v.Character.HumanoidRootPart.CanCollide = false 
+
+end) 
+end 
+end 
+end 
+end 
+end)
+end)
+
+tab1:NewButton("Change Hitbox to 20",function()
+
+for i,v in next, game:GetService('Players'):GetPlayers() do 
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+
+pcall(function() 
+
+v.Character.HumanoidRootPart.Size = 20
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
+v.Character.HumanoidRootPart.Material = "Neon" 
+v.Character.HumanoidRootPart.CanCollide = false 
+
+end) 
+end 
+end 
+end 
+end 
+end)
+end)
+end)
+
 local lbls = serv:Channel("Updates")
 
 lbls:Label("V1 = Release")
