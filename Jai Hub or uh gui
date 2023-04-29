@@ -1268,14 +1268,7 @@ v.Character.HumanoidRootPart.Size = value
 v.Character.HumanoidRootPart.Transparency = 0.5
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
 v.Character.HumanoidRootPart.Material = "Neon" 
-v.Character.HumanoidRootPart.CanCollide = false 
-
-end) 
-end 
-end 
-end 
-end 
-end)
+v.Character.HumanoidRootPart.CanCollide = false
 end)
 
 tab1:NewSlider("Hitbox",10,100,10,function(value)
@@ -1290,17 +1283,7 @@ v.Character.HumanoidRootPart.Size = value
 v.Character.HumanoidRootPart.Transparency = 0.5
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
 v.Character.HumanoidRootPart.Material = "Neon" 
-v.Character.HumanoidRootPart.CanCollide = false 
-
-end) 
-end 
-end 
-end 
-end 
-end)
-end)
-
-end)
+v.Character.HumanoidRootPart.CanCollide = false
 end)
 
 tab1:NewButton("Change Hitbox to 15",function()
@@ -1316,13 +1299,6 @@ v.Character.HumanoidRootPart.Transparency = 0.5
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
 v.Character.HumanoidRootPart.Material = "Neon" 
 v.Character.HumanoidRootPart.CanCollide = false 
-
-end) 
-end 
-end 
-end 
-end 
-end)
 end)
 
 tab1:NewButton("Change Hitbox to 20",function()
@@ -1338,14 +1314,6 @@ v.Character.HumanoidRootPart.Transparency = 0.5
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
 v.Character.HumanoidRootPart.Material = "Neon" 
 v.Character.HumanoidRootPart.CanCollide = false 
-
-end) 
-end 
-end 
-end 
-end 
-end)
-end)
 end)
 
 local lbls = serv:Channel("Updates")
