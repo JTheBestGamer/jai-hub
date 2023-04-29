@@ -1156,10 +1156,18 @@ end)
 
 btns:Seperator()
 
-btns:Button("Hitbox Extender [WORKING]", function()
+btns:Button("Hitbox Extender (WORKING)", function()
 DiscordLib:Notification("Notification", "Executed Hitbox Extender", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Hitbox Extender 2 (WORKING)", function()
+DiscordLib:Notification("Notification", "Executed Hitbox Extender 2", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Bad_Business/Hit_Box_Expander.lua"))()
 end)
 
 local lbls = serv:Channel("Updates")
