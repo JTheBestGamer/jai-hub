@@ -1247,74 +1247,107 @@ DiscordLib:Notification("Notification", "Executed Hitbox Extender 2", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Bad_Business/Hit_Box_Expander.lua"))()
 end)
 
+btns:Seperator()
+
 btns:Button("Hitbox Extender 3 (WORKING) [BY JAI]", function()
 DiscordLib:Notification("Notification", "Executed Hitbox Extender 3", "Okay!")
 
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/UILib/main/source"))();
+local Link = loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostDuckyy/Ui-Librarys/main/Playstation%20Ui%20Library/Source'))()
 
-lib:SetTitle("Hitbox Expander")
+local Win = Link:CreateWindow('Hitbox Extender','aka Penis Extender') -- :CreateWindow(Title,Info) Note: info no space
 
-local tab1 = lib:NewTab("sus", "dingle dangle my penis")
+local Tab = Win:addPage('Extend', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
+-- Note: Dont have update function
 
-tab1:NewTextBox("Hitbox","Enter WalkSpeed Here",function(value)
 
-for i,v in next, game:GetService('Players'):GetPlayers() do 
+-- Label
+Tab:addLabel('Made by Jai', 'By Jai') -- :addLabel(Title, Info)
 
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+-- Button
+Tab:addButton('Turn On', function() -- :addButton(Title, callback)
+    _G.Disabled = true
+end)
 
-pcall(function() 
+Tab:addButton('Turn Off', function()
+    _G.Disabled = false
+end)
 
-v.Character.HumanoidRootPart.Size = value 
-v.Character.HumanoidRootPart.Transparency = 0.5
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
-v.Character.HumanoidRootPart.Material = "Neon" 
+-- Toggles
+Tab:addToggle('Turn On/Off', function(value) -- :addToggle(Title, callback)
+    if value then -- if true then
+        _G.Disabled = true -- print true
+    else -- else false
+        _G.Disabled = false -- print false
+    end
+end)
+
+-- Slider
+Tab:addSlider('Hitbox by Slider', 10,100, function(value) -- :addSlider(Title, min, max, callback)
+_G.HeadSize = value
+_G.Disabled = false
+game:GetService('RunService').RenderStepped:connect(function()
+    
+if _G.Disabled then 
+for i,v in next, game:GetService('Players'):GetPlayers() do if 
+  v.Name ~= 
+game:GetService('Players').LocalPlayer.Name then pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 end)
+end
+end
+end
+end)
+end)
 
-tab1:NewSlider("Hitbox",10,100,10,function(value)
-
-for i,v in next, game:GetService('Players'):GetPlayers() do 
-
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
-
-pcall(function() 
-
-v.Character.HumanoidRootPart.Size = value 
-v.Character.HumanoidRootPart.Transparency = 0.5
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
-v.Character.HumanoidRootPart.Material = "Neon" 
+-- TextBox
+Tab:addTextBox('Hitbox by Text', 'æ', function(text) -- :addTextBox(Title, Info)
+_G.HeadSize = text
+_G.Disabled = false
+game:GetService('RunService').RenderStepped:connect(function()
+    
+if _G.Disabled then 
+for i,v in next, game:GetService('Players'):GetPlayers() do if 
+  v.Name ~=
+game:GetService('Players').LocalPlayer.Name then pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 end)
-
-tab1:NewButton("Change Hitbox to 15",function()
-
-for i,v in next, game:GetService('Players'):GetPlayers() do 
-
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
-
-pcall(function() 
-
-v.Character.HumanoidRootPart.Size = 15
-v.Character.HumanoidRootPart.Transparency = 0.5
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
-v.Character.HumanoidRootPart.Material = "Neon" 
-v.Character.HumanoidRootPart.CanCollide = false 
+end
+end
+end
+end)
 end)
 
-tab1:NewButton("Change Hitbox to 20",function()
-
-for i,v in next, game:GetService('Players'):GetPlayers() do 
-
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
-
-pcall(function() 
-
-v.Character.HumanoidRootPart.Size = 20
-v.Character.HumanoidRootPart.Transparency = 0.5
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red") 
-v.Character.HumanoidRootPart.Material = "Neon" 
-v.Character.HumanoidRootPart.CanCollide = false 
+-- Dropdown
+Tab:addDropdown('Hitbox by DropDown', {'10', '20', '30', '40', '50'}, 4, function(options) -- :addDropdown(Title, {'List', 'Yeah'}, Scroll Size, callback)
+_G.HeadSize = options
+_G.Disabled = false
+game:GetService('RunService').RenderStepped:connect(function()
+    
+if _G.Disabled then 
+for i,v in next, game:GetService('Players'):GetPlayers() do if 
+  v.Name ~= 
+game:GetService('Players').LocalPlayer.Name then pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
 end)
+end
+end
+end
+end)
+end)
+end)
+
 
 local lbls = serv:Channel("Updates")
 
