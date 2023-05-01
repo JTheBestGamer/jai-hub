@@ -75,23 +75,27 @@ end)
 Advanced:CreateTextBox("Hitbox Color", "Enter", function(c) -- c= gets textbox text after enter pressed
 
 _G.Disabled = true
+if _G.Disabled then
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("c")
 end)
 
 Advanced:CreateTextBox("Hitbox Material", "Enter", function(m) -- m= gets textbox text after enter pressed
 
 _G.Disabled = true
+if _G.Disabled then
 v.Character.HumanoidRootPart.Material = "m"
 end)
 
 Advanced:CreateTextBox("Hitbox Transparency", "0-1", function(t) -- t= gets textbox text after enter pressed
 
 _G.Disabled = true
+if _G.Disabled then
 v.Character.HumanoidRootPart.Transparency = t
 end)
 
 Advanced:CreateTextBox("CanCollide with Hitbox", "true/false", function(cc) -- cc= gets textbox text after enter pressed
 
 _G.Disabled = true
+if _G.Disabled then
 v.Character.HumanoidRootPart.CanCollide = cc
 end)
