@@ -27,14 +27,14 @@ end
 end)
 end)
 
-Hitboxes:CreateToggle("On/Off", function(state) -- toggle
-    _G.Disabled = state -- prints state (true or false)
+Hitboxes:CreateButton("Turn On", "and never turn off", function() -- button
+    _G.Disabled = true
 end)
 
 Hitboxes:CreateTextBox("Hitbox", "Enter", function(v) -- v= gets textbox text after enter pressed
     
 _G.HeadSize = v
-_G.Disabled = true
+_G.Disabled = false
 game:GetService('RunService').RenderStepped:connect(function()
     
 if _G.Disabled then 
@@ -53,7 +53,7 @@ end
 end)
 end)
 
-Hitboxes:CreateSlider(16, 500, "Slider Info", function(val) -- 16 (Min value) | 500 (Max value)
+Hitboxes:CreateSlider(16, 500, "Slider Hitbox (don't use)", function(val) -- 16 (Min value) | 500 (Max value)
     
 _G.HeadSize = val
 _G.Disabled = true
