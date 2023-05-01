@@ -1,0 +1,69 @@
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+
+local win = Flux:Window("Crucifix Hub", "by Jai", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+
+local tab = win:Tab("Tab 1", "http://www.roblox.com/asset/?id=6023426915")
+
+tab:Button("Crucifix", "only works on spawned entities", function()
+_G.Uses = 1
+_G.Range = 30
+_G.OnAnything = false
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Failed Crucifix", "only works on spawned entities", function()
+_G.Uses = 1
+_G.Range = 30
+_G.OnAnything = false
+_G.Fail = true
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Crucifix on Anything", "(click q for it to work)", function()
+_G.Uses = 1
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Failed Crucifix on Anything", "(click q for it to work)", function()
+_G.Uses = 1
+_G.Range = 30
+_G.OnAnything = false
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Infinite Crucifix", "only works on spawned entities", function()
+_G.Uses = 99999
+_G.Range = 30
+_G.OnAnything = false
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Infinite Failed Crucifix", "only works on spawned entities", function()
+_G.Uses = 99999
+_G.Range = 30
+_G.OnAnything = false
+_G.Fail = true
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Infinite Crucifix on Anything", "(click q for it to work)", function()
+_G.Uses = 99999
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tab:Button("Infinite Failed Crucifix on Anything", "(click q for it to work)", function()
+_G.Uses = 99999
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = true
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+  end)
