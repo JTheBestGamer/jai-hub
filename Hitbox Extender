@@ -4,7 +4,8 @@ local Main = Library:Create("Hitbox Extender", "Universal") -- Creates Main Wind
 local Hitboxes = Main:CreateSection("Hitboxes") -- | Creates section with name Other
 
 Hitboxes:CreateLabel("Made By Jai") -- label
-Preview:CreateButton("Change Hitbox To 20", "a test", function() -- button
+
+Hitboxes:CreateButton("Change Hitbox To 20", "a test", function() -- button
 
 _G.HeadSize = 20
 _G.Disabled = false
@@ -26,11 +27,11 @@ end
 end)
 end)
 
-Preview:CreateToggle("On/Off", function(state) -- toggle
+Hitboxes:CreateToggle("On/Off", function(state) -- toggle
     _G.Disabled = state -- prints state (true or false)
 end)
 
-Preview:CreateTextBox("Hitbox", "Enter", function(v) -- v= gets textbox text after enter pressed
+Hitboxes:CreateTextBox("Hitbox", "Enter", function(v) -- v= gets textbox text after enter pressed
     
 _G.HeadSize = v
 _G.Disabled = true
@@ -52,7 +53,7 @@ end
 end)
 end)
 
-Preview:CreateSlider(16, 500, "Slider Info", function(val) -- 16 (Min value) | 500 (Max value)
+Hitboxes:CreateSlider(16, 500, "Slider Info", function(val) -- 16 (Min value) | 500 (Max value)
     
 _G.HeadSize = val
 _G.Disabled = true
