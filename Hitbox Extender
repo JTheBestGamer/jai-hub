@@ -84,6 +84,6 @@ Advanced:CreateTextBox("Hitbox Transparency", "0-1", function(t) -- t= gets text
 v.Character.HumanoidRootPart.Transparency = t
 end)
 
-Advanced:CreateTextBox("CanCollide with Hitbox", "true/false", function(c) -- c= gets textbox text after enter pressed
-v.Character.HumanoidRootPart.CanCollide = c
+Advanced:CreateTextBox("CanCollide with Hitbox", "true/false", function(cc) -- cc= gets textbox text after enter pressed
+v.Character.HumanoidRootPart.CanCollide = cc
 end)
