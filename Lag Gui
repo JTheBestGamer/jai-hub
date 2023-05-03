@@ -1,0 +1,110 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({ Name = "Blek Library", StartupSound = { Toggle = true, SoundID = "rbxassetid://6958727243", TimePosition = 1
+}})
+
+local exampletab = win:Tab('Lag')
+local closetab = win:Tab('Close')
+
+exampletab:Button('Normal Lag', function()
+    -- Creo Fake Lag Script
+
+    -- < You> --
+
+    -- How long each lag can last
+    local Minimum_Time = 0.8
+    local Maximum_Time = 4
+    --                          --
+
+    local function lag(thing,tim)
+        local a = game.Players.LocalPlayer.Character.Animate
+        a.Parent = nil
+        local am = tim*30
+        local frames = am
+        while true do
+            if frames > 0 then
+                thing.Parent = nil
+                thing.Parent = workspace
+                frames = 1
+                task.wait()
+            else
+                a.Parent = game.Players.LocalPlayer.Character
+                break
+            end
+        end
+    end
+    while true do
+        wait(math.random(1,20)*0.1)
+        lag(game.Players.LocalPlayer.Character,math.random(Minimum_Time,Maximum_Time))
+    end
+end)
+
+exampletab:Button('Medium Lag', function()
+    -- Creo Fake Lag Script
+
+    -- < You> --
+
+    -- How long each lag can last
+    local Minimum_Time = 1
+    local Maximum_Time = 5
+    --                          --
+
+    local function lag(thing,tim)
+        local a = game.Players.LocalPlayer.Character.Animate
+        a.Parent = nil
+        local am = tim*30
+        local frames = am
+        while true do
+            if frames > 0 then
+                thing.Parent = nil
+                thing.Parent = workspace
+                frames = 1
+                task.wait()
+            else
+                a.Parent = game.Players.LocalPlayer.Character
+                break
+            end
+        end
+    end
+    while true do
+        wait(math.random(1,20)*0.1)
+        lag(game.Players.LocalPlayer.Character,math.random(Minimum_Time,Maximum_Time))
+    end
+end)
+
+exampletab:Button('High Lag', function()
+    -- Creo Fake Lag Script
+
+    -- < You> --
+
+    -- How long each lag can last
+    local Minimum_Time = 3
+    local Maximum_Time = 7
+    --                          --
+
+    local function lag(thing,tim)
+        local a = game.Players.LocalPlayer.Character.Animate
+        a.Parent = nil
+        local am = tim*30
+        local frames = am
+        while true do
+            if frames > 0 then
+                thing.Parent = nil
+                thing.Parent = workspace
+                frames = 1
+                task.wait()
+            else
+                a.Parent = game.Players.LocalPlayer.Character
+                break
+            end
+        end
+    end
+    while true do
+        wait(math.random(1,20)*0.1)
+        lag(game.Players.LocalPlayer.Character,math.random(Minimum_Time,Maximum_Time))
+    end
+end)
+
+closetab:Button('Destroy GUI', function()
+    win:Exit()
+end)
