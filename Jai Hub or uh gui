@@ -410,7 +410,7 @@ end)
 btns:Button("Create ur own UI (Copy)", function()
 DiscordLib:Notification("Notification", "Executed Make ur Own (ChatGPT Prompt)", "Okay!")
 
-setclipboard("https://github.com/JTheBestGamer/chatgpt-promptcode/blob/main/Create%20a%20UI%20Library%20(Blek)")
+setclipboard("https://github.com/JTheBestGamer/chatgpt-promptcode/tree/main")
 end)
 
 local lbls = serv:Channel("Updates")
