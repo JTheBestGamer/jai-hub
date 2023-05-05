@@ -2,7 +2,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Main = Library:Create("Hitbox Extender", "Universal") -- Creates Main Window | Fuzki (Hub Name) | Baseplate (Game Name)
 
 local Hitboxes = Main:CreateSection("Hitboxes") -- | Creates section with name Hitboxes
-local Advanced = Main:CreateSection("Advanced") -- | Creates section with name Advanced
 
 Hitboxes:CreateLabel("Made By Jai") -- label
 
@@ -65,86 +64,6 @@ v.Character.HumanoidRootPart.Transparency = 0.7
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
-end)
-end
-end
-end
-end)
-end)
-
-Advanced:CreateTextBox("Hitbox Color", "Enter", function(c) -- c= gets textbox text after enter pressed
-
-_G.Disabled = true
-game:GetService('RunService').RenderStepped:connect(function()
-    
-if _G.Disabled then 
-for i,v in next, game:GetService('Players'):GetPlayers() do if 
-  v.Name ~= 
-game:GetService('Players').LocalPlayer.Name then pcall(function()
-v.Character.HumanoidRootPart.Transparency = t
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("c")
-v.Character.HumanoidRootPart.Material = "m"
-v.Character.HumanoidRootPart.CanCollide = cc
-end)
-end
-end
-end
-end)
-end)
-
-Advanced:CreateTextBox("Hitbox Material", "Enter", function(m) -- m= gets textbox text after enter pressed
-
-_G.Disabled = true
-game:GetService('RunService').RenderStepped:connect(function()
-    
-if _G.Disabled then 
-for i,v in next, game:GetService('Players'):GetPlayers() do if 
-  v.Name ~= 
-game:GetService('Players').LocalPlayer.Name then pcall(function()
-v.Character.HumanoidRootPart.Transparency = t
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("c")
-v.Character.HumanoidRootPart.Material = "m"
-v.Character.HumanoidRootPart.CanCollide = cc
-end)
-end
-end
-end
-end)
-end)
-
-Advanced:CreateTextBox("Hitbox Transparency", "Enter", function(t) -- t= gets textbox text after enter pressed
-
-_G.Disabled = true
-game:GetService('RunService').RenderStepped:connect(function()
-    
-if _G.Disabled then 
-for i,v in next, game:GetService('Players'):GetPlayers() do if 
-  v.Name ~= 
-game:GetService('Players').LocalPlayer.Name then pcall(function()
-v.Character.HumanoidRootPart.Transparency = t
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("c")
-v.Character.HumanoidRootPart.Material = "m"
-v.Character.HumanoidRootPart.CanCollide = cc
-end)
-end
-end
-end
-end)
-end)
-
-Advanced:CreateTextBox("Hitbox CanCollide", "Enter", function(cc) -- cc= gets textbox text after enter pressed
-
-_G.Disabled = true
-game:GetService('RunService').RenderStepped:connect(function()
-    
-if _G.Disabled then 
-for i,v in next, game:GetService('Players'):GetPlayers() do if 
-  v.Name ~= 
-game:GetService('Players').LocalPlayer.Name then pcall(function()
-v.Character.HumanoidRootPart.Transparency = t
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("c")
-v.Character.HumanoidRootPart.Material = "m"
-v.Character.HumanoidRootPart.CanCollide = cc
 end)
 end
 end
