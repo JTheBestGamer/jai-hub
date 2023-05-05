@@ -407,10 +407,20 @@ DiscordLib:Notification("Notification", "Executed Hitbox Extender 3", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Hitbox%20Extender",true))()
 end)
 
-btns:Button("Create ur own UI (Copy)", function()
-DiscordLib:Notification("Notification", "Executed Make ur Own (ChatGPT Prompt)", "Okay!")
+btns:Seperator()
+
+btns:Button("Create ur own UI (Copy) (WORKING) [BY JAI]", function()
+DiscordLib:Notification("Notification", "Executed Make ur Own Gui (ChatGPT Prompt)", "Okay!")
 
 setclipboard("https://github.com/JTheBestGamer/chatgpt-promptcode/tree/main")
+end)
+
+btns:Seperator()
+
+btns:Button("Lag Gui (WORKING) [BY JAI]", function()
+DiscordLib:Notification("Notification", "Executed Make ur Own (ChatGPT Prompt)", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Lag%20Gui",true))()
 end)
 
 local lbls = serv:Channel("Updates")
