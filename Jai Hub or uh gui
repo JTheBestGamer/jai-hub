@@ -6,6 +6,12 @@ local serv = win:Server("Main", "")
 
 local btns = serv:Channel("Stuff")
 
+btns:Button("RTX", function()
+DiscordLib:Notification("Notification", "Executed RTX", "Okay!")
+
+loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+end)
+
 btns:Button("Anti Lag (WORKING, DISABLES ALL TEXTURE)", function()
 DiscordLib:Notification("Notification", "Executed AL", "Okay!")
 
@@ -418,7 +424,7 @@ end)
 btns:Seperator()
 
 btns:Button("Lag Gui (WORKING) [BY JAI]", function()
-DiscordLib:Notification("Notification", "Executed Make ur Own (ChatGPT Prompt)", "Okay!")
+DiscordLib:Notification("Notification", "Executed Lag Gui", "Okay!")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Lag%20Gui",true))()
 end)
