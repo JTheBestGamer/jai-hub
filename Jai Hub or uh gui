@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("Discord V1")
 
-local serv = win:Server("You Will Never Leave", "")
+local serv = win:Server("You Will Never Leave", "rbxassetid://12288005965")
 
 local btns = serv:Channel("scripts")
 
