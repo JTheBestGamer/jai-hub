@@ -1,16 +1,20 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local win = DiscordLib:Window("sussy baka")
+local win = DiscordLib:Window("Discord V1")
 
-local serv = win:Server("Main", "")
+local serv = win:Server("You Will Never Leave", "")
 
-local btns = serv:Channel("Stuff")
+local btns = serv:Channel("scripts")
+
+local gnrl = serv:Channel("general")
 
 btns:Button("RTX", function()
 DiscordLib:Notification("Notification", "Executed RTX", "Okay!")
 
 loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
 end)
+
+btns:Seperator()
 
 btns:Button("Anti Lag (WORKING, DISABLES ALL TEXTURE)", function()
 DiscordLib:Notification("Notification", "Executed AL", "Okay!")
