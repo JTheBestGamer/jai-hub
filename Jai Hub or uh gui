@@ -2,11 +2,13 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("Discord V1")
 
-local serv = win:Server("You Will Never Leave", "rbxassetid://12288005965")
+local serv = win:Server("You Will Never Leave", "http://www.roblox.com/asset/?id=12288005965")
 
 local btns = serv:Channel("scripts")
 
 local gnrl = serv:Channel("general")
+
+local lbls = serv:Channel("updates")
 
 btns:Button("RTX", function()
 DiscordLib:Notification("Notification", "Executed RTX", "Okay!")
@@ -433,7 +435,13 @@ DiscordLib:Notification("Notification", "Executed Lag Gui", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Lag%20Gui",true))()
 end)
 
-local lbls = serv:Channel("Updates")
+gnrl:Button("fartdude: hey guys", function()
+DiscordLib:Notification("Message Sent (hey)", "fartdude: hey", "Okay!")
+end)
+
+gnrl:Button("discord mod: no posting memes in general", function()
+DiscordLib:Notification("Message Sent (hey)", "discord mod: frick off", "Reply with (frick you!)")
+end)
 
 lbls:Label("V1 = Release")
 
