@@ -40,7 +40,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died to Nightmare Ambush.", "He only spawns after The Library.", "His sound is the same as Ambush, only his speed is faster."},
+    DeathMessage = {"You died to Nightmare Ambush.", "It only spawns after The Library.", "It's sound is the same as Ambush, only his speed is faster."},
     IsCuriousLight = true
 })
 
@@ -113,7 +113,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died to A-60", "He only spawns after Door 60.", "His loud sound might catch your attention."},
+    DeathMessage = {"You died to A-60", "It only spawns after Door 60.", "It's loud sound might catch your attention."},
     IsCuriousLight = true
 })
 
@@ -153,7 +153,7 @@ end
 Spawner.runEntity(entity)
 end)
 
-Template.Loader({['WaitTime'] = 30,['DisableSeek'] = true,['DisableFigure'] = true,['RoomMax'] = 90,['RoomMin'] = 85},function()
+Template.Loader({['WaitTime'] = 30,['DisableSeek'] = true,['DisableFigure'] = true,['RoomMax'] = 100,['RoomMin'] = 90},function()
 ---====== Define spawner ======---
 
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
@@ -186,7 +186,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died to Ripper", "He only spawns after Door 85 until 90.", "He acts like a boss entity."},
+    DeathMessage = {"You died to Ripper", "It only spawns after Door 90 until 100.", "It acts like a boss entity."},
     IsCuriousLight = true
 })
 
@@ -259,7 +259,226 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died to...", "OH COME ON MAN THIS AINT EVEN FUNNY ANYMORE", "Well he only spawns at door... 69!?"},
+    DeathMessage = {"You died to...", "OH COME ON MAN THIS AINT EVEN FUNNY ANYMORE", "Well it only spawns at door... 69!?"},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    print("Entity has despawned")
+end
+
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
+end)
+
+Template.Loader({['WaitTime'] = 20,['DisableSeek'] = false,['DisableFigure'] = true,['RoomMax'] = 45,['RoomMin'] = 30},function()
+---====== Define spawner ======---
+
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "Deer God",
+    Model = "rbxassetid://12262883448",
+    Speed = 30,
+    MoveDelay = 3,
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 50,
+    SpawnInFront = false,
+    ShatterLights = true,
+    FlickerLights = {
+        Enabled = true,
+        Duration = 5
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        Delay = 2
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {0, 0, 0, 0},
+        Range = 100
+    },
+    ResistCrucifix = false,
+    BreakCrucifix = true,
+    DeathMessage = {"You died to Deer God.", "It only spawns on the seek chase.", "It's sound is weird, and it is slow."},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    print("Entity has despawned")
+end
+
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
+  end)
+
+Template.Loader({['WaitTime'] = 20,['DisableSeek'] = false,['DisableFigure'] = true,['RoomMax'] = 95,['RoomMin'] = 80},function()
+---====== Define spawner ======---
+
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "Deer God",
+    Model = "rbxassetid://12262883448",
+    Speed = 30,
+    MoveDelay = 3,
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 50,
+    SpawnInFront = false,
+    ShatterLights = true,
+    FlickerLights = {
+        Enabled = true,
+        Duration = 5
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        Delay = 2
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {0, 0, 0, 0},
+        Range = 100
+    },
+    ResistCrucifix = false,
+    BreakCrucifix = true,
+    DeathMessage = {"You died to Deer God.", "It only spawns on the seek chase.", "It's sound is weird, and it is slow."},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    print("Entity has despawned")
+end
+
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
+  end)
+
+Template.Loader({['WaitTime'] = 20,['DisableSeek'] = true,['DisableFigure'] = true,['RoomMax'] = 52,['RoomMin'] = 52},function()
+---====== Define spawner ======---
+
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "Rebound",
+    Model = "rbxassetid://12254145022",
+    Speed = 300,
+    MoveDelay = 3,
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 50,
+    SpawnInFront = false,
+    ShatterLights = true,
+    FlickerLights = {
+        Enabled = true,
+        Duration = 2
+    },
+    Cycles = {
+        Min = 5,
+        Max = 10,
+        Delay = 2
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {10, 150, 10, 5},
+        Range = 100
+    },
+    ResistCrucifix = false,
+    BreakCrucifix = true,
+    DeathMessage = {"You died to Rebound.", "It only spawns on Jeff's Shop.", "what a party pooper 💀"},
     IsCuriousLight = true
 })
 
