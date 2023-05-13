@@ -443,6 +443,12 @@ gnrl:Button("discord mod: no posting memes in general", function()
 DiscordLib:Notification("Message Sent (hey)", "discord mod: frick off", "Reply with (frick you!)")
 end)
 
+gnrl:Button("scripter dude: here's a swear gui script", function()
+DiscordLib:Notification("Message Sent (can I have)", "scripter dude: sure", "Okay!")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Swear%20Gui%20VTurbo",true))()
+end)
+
 lbls:Label("V1 = Release")
 
 lbls:Label("V1.5 = Adding stuff")
