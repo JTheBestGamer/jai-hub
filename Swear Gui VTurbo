@@ -1,0 +1,58 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))() 
+
+local PhantomForcesWindow = Library:NewWindow("Swear Gui VTurbo") 
+
+local KillingCheats = PhantomForcesWindow:NewSection("The Bypass")
+
+KillingCheats:CreateTextbox("Enter Message To Bypass", function(text)
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("text"..string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(string.gsub(TextBox.Text,"Q","Q᠎"),"W","W᠎"),"E","E᠎"),"R","R᠎"),"T","T᠎"),"Y","Y᠎"),"U","U᠎"),"I","I᠎"),"O","O᠎"),"P","P᠎"),"A","A᠎"),"S","S᠎"),"D","D᠎"),"F","F᠎"),"G","G᠎"),"H","H᠎"),"J","J᠎"),"K","K᠎"),"L","L᠎"),"Z","Z᠎"),"X","X᠎"),"C","C᠎"),"V","V᠎"),"B","B᠎"),"N","N᠎"),"M","M᠎"),"q","q᠎"),"w","w᠎"),"e","e᠎"),"r","r᠎"),"t","t᠎"),"y","y᠎"),"u","u᠎"),"i","i᠎"),"o","o᠎"),"p","p᠎"),"a","a᠎"),"s","s᠎"),"d","d᠎"),"f","f᠎"),"g","g᠎"),"h","h᠎"),"j","j᠎"),"k","k᠎"),"l","l᠎"),"z","z᠎"),"x","x᠎"),"c","c᠎"),"v","v᠎"),"b","b᠎"),"n","n᠎"),"m","m᠎"),"f᠎u᠎c᠎","f᠎u᠎؜c᠎"),"s᠎h᠎i᠎t᠎","s᠎h᠎؜i᠎t᠎"),"d᠎i᠎c᠎k᠎","d᠎i᠎؜c᠎k᠎"),"c᠎o᠎c᠎k᠎","c᠎o᠎؜c᠎k᠎"),"f᠎a᠎g᠎","f᠎a᠎؜g᠎"),"b᠎i᠎t᠎c᠎h᠎","b᠎i᠎؜t᠎c᠎h᠎"),"a᠎s᠎s᠎h᠎o᠎l᠎e᠎","a᠎s᠎؜s᠎h᠎o᠎l᠎e᠎"),"p᠎e᠎n᠎i᠎","p᠎e᠎؜n᠎i᠎"),"v᠎a᠎g᠎","v᠎a᠎؜g᠎"),"w᠎h᠎a᠎t᠎ t᠎h᠎e᠎ f᠎u᠎؜c᠎","w᠎h᠎؜a᠎t᠎ t᠎h᠎e᠎ f᠎u᠎؜c᠎"),"k؜i؜k᠎","k؜؜i؜k᠎"),"f؜a؜g؜g؜o؜","f؜؜a؜g؜g؜o؜"),"n᠎i᠎g᠎g᠎a᠎","n᠎؜i᠎g᠎g᠎a"),"n᠎i᠎g᠎g᠎e᠎r᠎","n᠎؜i᠎g᠎g᠎e᠎r᠎"),"n᠎i᠎g ","n᠎؜i᠎g "),"s᠎e᠎m᠎e᠎n᠎","s᠎e᠎؜m᠎e᠎n᠎"),"h᠎e᠎n᠎t᠎a᠎i᠎","h᠎e᠎؜n᠎t᠎a᠎i᠎"),"p᠎o᠎r᠎n᠎","p᠎o᠎؜r᠎n᠎"),"w᠎w᠎w᠎.","w᠎w᠎؜w᠎."),"᠎.c᠎o᠎m᠎","᠎.c᠎o᠎؜m᠎"),"᠎.n᠎e᠎t᠎","᠎.n᠎e᠎؜t᠎"),"᠎.o᠎r᠎g᠎","᠎.o᠎r᠎؜g᠎"),"h᠎i᠎t᠎l᠎","h᠎i᠎؜t᠎l᠎"),"l᠎o᠎l᠎i᠎c᠎o᠎n᠎","l᠎o᠎؜l᠎i᠎c᠎o᠎n᠎"),"d᠎i᠎s᠎c᠎o᠎r᠎d᠎","d᠎i᠎؜s᠎c᠎o᠎r᠎d᠎"),"l؜e؜s؜b؜o؜","l؜e؜؜s؜b؜o؜"),"s᠎e᠎x᠎","s᠎e᠎؜x᠎"),"b᠎u᠎l᠎l᠎s᠎h᠎؜i᠎t᠎","b᠎u᠎؜l᠎l᠎s᠎h᠎؜i᠎t᠎"),"m᠎o᠎t᠎h᠎e᠎r᠎f᠎u᠎؜c᠎","m᠎o᠎؜t᠎h᠎e᠎r᠎f᠎u᠎؜c᠎"),"p᠎u᠎s᠎s᠎","p᠎u᠎؜s᠎s᠎"),"c᠎u᠎n᠎t᠎","c᠎u᠎؜n᠎t᠎"),"c᠎u᠎m᠎","c᠎u᠎؜m᠎"),"b᠎e᠎a᠎n᠎","b᠎e᠎؜a᠎n᠎"),"c᠎h᠎i᠎n᠎","c᠎h᠎؜i᠎n᠎"),"c᠎o᠎o᠎n᠎","c᠎o᠎؜o᠎n᠎"),"c᠎o᠎c᠎a᠎i᠎n᠎e᠎","c᠎o᠎؜c᠎a᠎i᠎n᠎e᠎"),"m᠎o᠎t᠎h᠎e᠎r᠎ f᠎u᠎؜c᠎","m᠎o᠎؜t᠎h᠎e᠎r᠎ f᠎u᠎؜c᠎"),"t᠎i᠎t᠎s᠎","t᠎i᠎؜t᠎s᠎"),"t᠎i᠎t᠎t᠎","t᠎i᠎؜t᠎t᠎"),"w᠎h᠎o᠎r᠎e᠎","w᠎h᠎؜o᠎r᠎e᠎"),"s᠎l᠎u᠎t᠎","s᠎l᠎؜u᠎t᠎"),"p᠎r᠎o᠎s᠎t᠎i᠎t᠎u᠎d᠎e᠎","p᠎r᠎؜o᠎s᠎t᠎i᠎t᠎u᠎d᠎e᠎᠎"),"g᠎a᠎y᠎w᠎a᠎d᠎","g᠎a᠎؜y᠎w᠎a᠎d᠎"),"r᠎a᠎p ","r᠎a᠎؜p᠎"),"'","'᠎"),",",",᠎"),"!","!᠎"),"?","?᠎"),"/","/᠎"),"h᠎t᠎t᠎p᠎","h᠎t᠎t᠎p᠎؜"),"h᠎t᠎t᠎p᠎s᠎","h᠎t᠎t᠎p᠎s᠎؜"),"F᠎a᠎g᠎g᠎o᠎t","F᠎aggot"),"A᠎s᠎s᠎h᠎o᠎l᠎e᠎s᠎","A᠎ssholes"),"S᠎h᠎i᠎t᠎t᠎","S᠎hitt"),"m᠎o᠎f᠎o᠎","m᠎o᠎؜f᠎o᠎"),"N᠎i᠎g᠎g᠎","N᠎igg"),"p᠎r᠎o᠎s᠎t᠎i᠎t᠎u᠎t᠎e᠎᠎","p᠎r᠎᠎o᠎s᠎t᠎i᠎t᠎u᠎t᠎e᠎"),"᠎ "," ")," "," ").."","All")
+
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("The Old Bypass")
+
+KillingCheats:CreateButton("Shit", function() 
+
+local args = {
+    [1] = "s𐌜 h𐌜 i𐌜 t",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+end)
+
+KillingCheats:CreateButton("Nigga", function() 
+
+local args = {
+    [1] = "n𐌜 i𐌜 g𐌜 g𐌜 a",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+end)
+
+KillingCheats:CreateButton("Nigger", function() 
+
+local args = {
+    [1] = "n𐌜 i𐌜 g𐌜 g𐌜 e𐌜 r",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+end)
+
+KillingCheats:CreateButton("Shit", function() 
+
+local args = {
+    [1] = "p𐌜 u𐌜 s𐌜 s𐌜 y",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+end) 
+
+print("whoever looks at the console is gay")
