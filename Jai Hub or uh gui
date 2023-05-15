@@ -152,10 +152,10 @@ end)
 
 btns:Seperator()
 
-btns:Button("Hardcore (WORKING) [BY JAI]", function()
+btns:Button("Bad Hardcore Turbo (WORKING) [BY JAI]", function()
 DiscordLib:Notification("Notification", "Executed Bad Hardcore", "O- wait what?")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Bad%20Hardcore",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JTheBestGamer/jai-hub/main/Bad%20Hardcore%20Turbo",true))()
 end)
 
 btns:Seperator()
