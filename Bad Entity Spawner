@@ -2404,7 +2404,8 @@ Spawner.runEntity(entity)
 
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'cool warning for the fact that billy is coming',true,5)
 
-  end)
   end,
 
 })
+
+end)
