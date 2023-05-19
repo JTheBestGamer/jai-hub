@@ -1229,7 +1229,7 @@ end
 Spawner.runEntity(entity)
 
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'I must crouch.',true,5)
-
+  end)
   end,
 
 })
