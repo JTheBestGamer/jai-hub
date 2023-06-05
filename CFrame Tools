@@ -1,0 +1,79 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Brand/Turtle-Lib/main/source.lua"))()
+
+local window = library:Window("CFrame Teleporter")
+
+local window2 = library:Window("CFrame Grabber")
+
+window:Box("Way 1", function(coords, hi)
+
+if hi then
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(coords)
+
+   end
+
+end)
+
+window:Box("Way 2", function(coords2, hi2)
+
+if hi2 then
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+local location = CFrame.new(coords2)
+
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+
+wait(0.1)
+
+pl.CFrame = location
+
+   end
+
+end)
+
+window:Button("Close This GUI", function()
+
+   window:Destroy()
+
+end)
+
+window:Button("Close Both GUIs", function()
+
+   library:Destroy()
+
+end)
+
+window:Label("better just make a gui", Color3.fromRGB(127, 143, 166))
+
+window2:Button("Copy CFrame", function()
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+setclipboard(pl.CFrame)
+
+end)
+
+window2:Button("Console CFrame", function()
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+print(pl.CFrame)
+
+end)
+
+window2:Button("Close This GUI", function()
+
+   window2:Destroy()
+
+end)
+
+window2:Button("Close Both GUIs", function()
+
+   library:Destroy()
+
+end)
+
+window2:Label("snatch >:)", Color3.fromRGB(127, 143, 166))
