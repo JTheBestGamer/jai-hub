@@ -1,0 +1,11 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Brand/Turtle-Lib/main/source.lua"))()
+
+local window = library:Window("Loadstringer Portable")
+
+window:Box("Enter Raw Link", function(rawlink, mrbeast)
+   if mrbeast then
+   setclipboard("loadstring(game:HttpGet(rawlink,true))()")
+   end
+end)
+
+window:Label("Inspired by mattlawz.dev, made portable by Jai.", Color3.fromRGB(127, 143, 166))
