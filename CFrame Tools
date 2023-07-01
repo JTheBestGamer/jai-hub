@@ -8,7 +8,7 @@ window:Box("Way 1", function(coords, hi)
 
 if hi then
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(coords)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(coords))
 
    end
 
@@ -50,17 +50,13 @@ window:Label("better just make a gui", Color3.fromRGB(127, 143, 166))
 
 window2:Button("Copy CFrame", function()
 
-local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-
-setclipboard(pl.CFrame)
+setclipboard(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
 
 end)
 
 window2:Button("Console CFrame", function()
 
-local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-
-print(pl.CFrame)
+print(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
 
 end)
 
