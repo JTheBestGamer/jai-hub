@@ -5,15 +5,12 @@ for i,v in next, game:GetService('Players'):GetPlayers() do if
   v.Name ~= 
 game:GetService('Players').LocalPlayer.Name then pcall(function()
 v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = 0.7
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 end)
 end
 end
 end
-end)
 end)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Fuzki-UI-Library/main/FuzkiLibrary.lua"))() -- Gets the Library
@@ -25,14 +22,36 @@ Hitboxes:CreateLabel("Made By Jai") -- label
 
 Hitboxes:CreateButton("Change Hitbox To 20", "Test", function() -- button
 
+_G.HeadSize = 20
 
+end)
 
 Hitboxes:CreateTextBox("Hitbox", "Enter", function(h) -- h= gets textbox text after enter pressed
     
+_G.HeadSize = h
 
+end)
 
 Hitboxes:CreateSlider(16, 500, "Slider Hitbox (don't use)", function(val) -- 16 (Min value) | 500 (Max value)
 
+_G.HeadSize = val
 
+end)
+
+Preview:CreateToggle("Toggle Info", function(state) -- creates Toggle
+
+_G.Hitbox = state
+
+end)
+
+Hitboxes:CreateTextBox("Color", "Enter", function(colhit) -- colhit= gets textbox text after enter pressed
+    
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("colhit")
+
+end)
+
+Hitboxes:CreateTextBox("Transparency", "Enter", function(tphit) -- tphit= gets textbox text after enter pressed
+    
+v.Character.HumanoidRootPart.Transparency = tphit
 
 end)
